@@ -1,7 +1,7 @@
 INC=/usr/include/wine/wine/windows/
 
 wechat-trigger: main.c
-	winegcc -I ${INC} $< -o $@
+	winegcc -m32 -I ${INC} $< -o $@
 
 
 install:
